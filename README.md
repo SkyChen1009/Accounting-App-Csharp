@@ -36,3 +36,24 @@ Manages the list of records, each representing a single transaction with attribu
     - Greets the user and loads the user's personal transaction history.
     - Provides options to add a new transaction (opens Form3), view records (opens Form4), or exit the application.
     - Upon exiting, saves the updated transaction list to a file named after the user's username.
+
+- Add New Record (Form3)
+  - Purpose: Enables users to add new records by selecting from a list of categories and subcategories, inputting an amount, and providing additional details.
+  - Functionality:
+    - Initializes the form with default date settings.
+    - Validates and saves a new transaction record based on user input, categorizing it appropriately.
+    - Dynamically stores selected button text for easy reference and categorization.
+   
+- View and Filter Records (Form4)
+  - Purpose: Displays a list of records and allows filtering based on category.
+  - Functionality:
+    - Provides a nested structure for filtering:
+      - 支出 (Expenses):
+        - 食物 (Food): Breakfast, Lunch, Dinner, Snacks, Drinks, Night Meals, etc.
+        - 交通 (Transportation): Gas, Bus, Metro, Train, etc.
+        - 娛樂 (Entertainment): Movies, Clothing, Travel, etc.
+        - 生活 (Living): Rent, Utilities, Telecom.
+      - 收入 (Income): Salary, Bonus, and others.
+     
+## Data Storage and Management
+The app stores user credentials in User.txt, while each user’s transaction records are saved in a separate text file, named according to the username. Transaction records include the category, description, amount, and timestamp.
