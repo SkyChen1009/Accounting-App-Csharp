@@ -57,3 +57,8 @@ Manages the list of records, each representing a single transaction with attribu
      
 ## Data Storage and Management
 The app stores user credentials in User.txt, while each user’s transaction records are saved in a separate text file, named according to the username. Transaction records include the category, description, amount, and timestamp.
+
+## Future Improvements
+ - **Data Analysis**: Implement features for expense trend analysis and income insights.
+ - **Security Enhancements**: Add password hashing for more secure user credentials storage.
+ - **Export Options**: Allow users to export transaction summaries to CSV or PDF.
